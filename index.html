@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0d1117">
+  <title>MISSION CAFÉ V5 MOBILE — Étape 7</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+</head>
+<body>
+  <main class="app-shell">
+    <div class="topbar">
+      <div>
+        <strong>MISSION CAFÉ V5</strong>
+        <span>Étape 7 — Musique officielle</span>
+      </div>
+      <div class="status">HTML5 / Canvas / JavaScript</div>
+    </div>
+
+    <section class="game-frame">
+      <canvas id="game" width="1280" height="720"></canvas>
+      <div id="boot" class="boot">Initialisation du moteur…</div>
+    </section>
+
+    <div class="help">
+      ← → déplacer · ESPACE sauter · E ignorer/interagir · A accepter · P pause · R rejouer · F1 debug
+    </div>
+    <div id="mobileControls" class="mobile-controls" aria-label="Commandes tactiles">
+      <div class="mobile-left">
+        <button class="touch-btn move-btn" data-code="ArrowLeft" aria-label="Gauche">◀</button>
+        <button class="touch-btn move-btn" data-code="ArrowRight" aria-label="Droite">▶</button>
+      </div>
+      <div class="mobile-right">
+        <button class="touch-btn action-btn accept-btn" data-code="KeyA" aria-label="Accepter">A</button>
+        <button class="touch-btn action-btn interact-btn" data-code="KeyE" aria-label="Interagir">E</button>
+        <button class="touch-btn jump-btn" data-code="Space" aria-label="Sauter">SAUT</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/core/input.js"></script>
+  <script src="js/core/camera.js"></script>
+  <script src="js/core/physics.js"></script>
+  <script src="js/core/animation.js"></script>
+  <script src="js/core/sceneManager.js"></script>
+  <script src="js/core/entityManager.js"></script>
+  <script src="js/core/triggerZone.js"></script>
+  <script src="js/core/audio.js"></script>
+  <script src="js/core/particles.js"></script>
+  <script src="js/core/renderer.js"></script>
+  <script src="js/entities/player.js"></script>
+  <script src="js/entities/crate.js"></script>
+  <script src="js/entities/safetyWoman.js"></script>
+  <script src="js/entities/botia.js"></script>
+  <script src="js/entities/coffeeMachine.js"></script>
+  <script src="js/entities/forklift.js"></script>
+  <script src="js/entities/fallingBox.js"></script>
+  <script src="js/entities/hazardZone.js"></script>
+  <script src="js/ui/dialog.js"></script>
+  <script src="js/ui/interaction.js"></script>
+  <script src="js/ui/endScreen.js"></script>
+  <script src="js/core/engine.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/mobile.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+</html>
